@@ -1,0 +1,74 @@
+html{
+    background-color:rgba(124, 116, 116, 0.329) ;
+}
+
+.flex1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.textArea{
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px solid black;
+    height: 300px;
+    width: 525px;
+    background-color: blue;
+    outline: rgb(35, 35, 35) ridge 50px;
+    color: ivory;
+}
+
+.flexKeys{
+    display: flex;
+    /* position: absolute; */
+    justify-content: center;
+ 
+
+}
+
+.keybrd{
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px;
+    grid-template-rows: 80px 80px 80px;
+    border: 25px solid rgba(27, 26, 26, 0.795);
+    background-color: rgba(27, 26, 26, 0.795);
+    width: 800px;
+    border-radius: 5px;
+    box-shadow: 10px 10px gray;
+}
+
+.let{
+    /* height: 50px;
+    width: 50px; */
+    background-color: gainsboro;
+    border: 3px solid lightblue;
+    margin: 5px;
+    border-radius: 5%;
+    text-align: center;
+    /* padding-top: 10px; */
+    font-size: 50px;
+    box-shadow:0 6px gray;
+}
+
+.let:active{
+    
+    box-shadow: 0 3px gray;
+    transform: translateY(5px);
+}
+
+.sp{
+    grid-column: 4/ 6;
+    font-size: 40px;
+}
+
+.del{
+    grid-column: 6/ 8;
+    font-size: 30px;
+}
+
+/* .a{
+   grid-column: 1/3;
+} */
