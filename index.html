@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Project</title>
+    <link rel="stylesheet" href="newProjectStyle.css">
+</head>
+<body>
+    
+        <br>
+        <br>
+    <div class="flex1">
+        <div class="textArea"><p id="txt"></p></div>
+    </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    
+
+    <div class="flexKeys">
+        <div class="keybrd">
+            <button onclick="typeLetter('A')" class="let a" id="a">A</button>
+            <button onclick="typeLetter('B')"  class="let b" id="b">B</button>
+            <button onclick="typeLetter('C')" class="let c" id="c">C</button>
+            <button onclick="typeLetter('D')" class="let d" id="d">D</button>
+            <button onclick="typeLetter('E')" class="let e" id="e">E</button>
+            <button onclick="typeLetter('F')" class="let f" id="f">F</button>
+            <button onclick="typeLetter('G')" class="let g" id="g">G</button>
+            <button onclick="typeLetter('H')" class="let h">H</button>
+            <button onclick="typeLetter('I')" class="let i">I</button>
+            <button onclick="typeLetter('J')" class="let j">J</button>
+            <button onclick="typeLetter('K')" class="let k">K</button>
+            <button onclick="typeLetter('L')" class="let l">L</button>
+            <button onclick="typeLetter('M')" class="let m">M</button>
+            <button onclick="typeLetter('N')" class="let n">N</button>
+            <button onclick="typeLetter('O')" class="let o">O</button>
+            <button onclick="typeLetter('P')" class="let p">P</button>
+            <button onclick="typeLetter('Q')" class="let q">Q</button>
+            <button onclick="typeLetter('R')" class="let r">R</button>
+            <button onclick="typeLetter('S')" class="let s">S</button>
+            <button onclick="typeLetter('T')" class="let t">T</button>
+            <button onclick="typeLetter('U')" class="let u">U</button>
+            <button onclick="typeLetter('V')" class="let v">V</button>
+            <button onclick="typeLetter('W')" class="let w">W</button>
+            <button onclick="typeLetter(' ')" class="let sp">SPACE</button>
+            <button onclick="delLetter()" class="let del">DELETE</button>
+            <!-- <button
+            class="let sp">SPACE</button>
+            <button class="let sp">SPACE</button>
+            <button class="let sp">SPACE</button> -->
+            <button onclick="typeLetter('X')" class="let x">X</button>
+            <button onclick="typeLetter('Y')" class="let y">Y</button>
+            <button onclick="typeLetter('Z')" class="let z">Z</button>
+        </div>
+    </div>    
+
+    <script>
+        
+        function typeLetter(keyLet){
+            var wasLet= document.getElementById('txt').innerHTML;
+            document.getElementById('txt').innerHTML= wasLet + keyLet;
+        }
+
+        function delLetter(){
+            var newArray= [];
+            newArray[newArray.length]= document.getElementById('txt').innerHTML;
+            var str= newArray[0];
+            var str2= str.split("");
+            str2.pop();
+            strNew=str2.join("");
+            document.getElementById('txt').innerHTML= strNew;
+       
+         //    var lastLet= keyLet.innerHTML;
+        //     document.getElementById('txt').innerHTML= wasLet.innerHTML+ keyLet.innerHTML;
+        }
+        
+        // document.getElementById('a').addEventListener
+        // ('click', typeA);
+        // function typeA() {
+        //     let l1 = "A";
+        //     document.getElementById("txt").innerHTML = l1;
+        // }
+
+        // document.getElementById('b').addEventListener
+        // ('click', typeB);
+        // function typeB() {
+        //     let l2 = "B";
+        //     document.getElementById("txt").innerHTML = l2;
+        // }
+    </script>
+</body>
+</html>
